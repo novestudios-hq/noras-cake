@@ -112,7 +112,7 @@ h2 { font-size: clamp(50px, 5.5vw, 78px); color: var(--burgundy-dark); line-heig
 .gallery-card-tall .gallery-image img { object-position: 50% 36%; }
 .gallery-card-wide .gallery-image img { object-position: 50% 83%; }
 .gallery-card-full .gallery-image { background: var(--pink); }
-.gallery-card-full .gallery-image img { object-fit: contain; object-position: center; padding: 10px; }
+.gallery-card-full .gallery-image img { object-fit: cover; object-position: center 52%; padding: 0; }
 .gallery-card:hover { box-shadow: 0 18px 38px rgba(91, 46, 52, .09); }
 .gallery-card:hover .gallery-image img { transform: scale(1.045); }
 .gallery-image img[tabindex]:focus-visible { outline: 3px solid var(--burgundy); outline-offset: 4px; }
