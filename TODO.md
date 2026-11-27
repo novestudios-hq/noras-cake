@@ -33,6 +33,10 @@
 - [x] Added filterable Gallery categories for `wedding`, `birthday`, `sweets`, `restaurant`, and `custom`.
 - [x] Added a dedicated `Për restorante` service card and restaurant-specific inquiry wording, separate from private celebration orders.
 - [x] Added visible Albanian WhatsApp templates for private customers and restaurants, with copy-to-clipboard buttons.
+- [x] Made homepage preview images and arrows link to their matching Gallery filters via `?category=` URLs.
+- [x] Added URL-driven Gallery filter activation so category links open the relevant filtered view.
+- [x] Replaced temporary social-preview metadata with the live client hero asset and added route-specific canonical/`og:url` metadata.
+- [x] Replaced the homepage video poster with a real client cheesecake photo.
 
 ## Waiting for client confirmation
 
@@ -44,6 +48,8 @@
 - [ ] Confirm final phone number, address, order lead time, pickup / delivery policy, and payment or deposit terms.
 - [ ] Have a native Albanian speaker proofread the final copy.
 - [ ] Decide whether the WhatsApp-first form is the final workflow or whether email backup is also required.
+- [ ] Add separate restaurant form fields for restaurant name, contact person, quantity, supply cadence, and delivery / pickup once Nora confirms the B2B workflow.
+- [ ] Add a second or third approved testimonial if the client provides exact wording and website-use permission.
 - [ ] Add additional customer testimonials only when exact wording and website-use approval are provided.
 
 ## Before public launch

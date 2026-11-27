@@ -23,17 +23,23 @@ filterButtons.forEach((button) => {
   button.setAttribute('aria-selected', String(button.classList.contains('is-active')));
 });
 
-filterButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const filter = button.dataset.filter;
-    filterButtons.forEach((item) => item.classList.toggle('is-active', item === button));
-    filterButtons.forEach((item) => item.setAttribute('aria-selected', String(item === button)));
-    galleryCards.forEach((card) => {
-      const shouldShow = filter === 'all' || card.dataset.category === filter;
-      card.classList.toggle('is-hidden', !shouldShow);
-    });
+const applyGalleryFilter = (filter) => {
+  const selected = [...filterButtons].find((button) => button.dataset.filter === filter) || filterButtons[0];
+  const selectedFilter = selected?.dataset.filter || 'all';
+  filterButtons.forEach((item) => item.classList.toggle('is-active', item === selected));
+  filterButtons.forEach((item) => item.setAttribute('aria-selected', String(item === selected)));
+  galleryCards.forEach((card) => {
+    const shouldShow = selectedFilter === 'all' || card.dataset.category === selectedFilter;
+    card.classList.toggle('is-hidden', !shouldShow);
   });
+};
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => applyGalleryFilter(button.dataset.filter));
 });
+
+const requestedFilter = new URLSearchParams(window.location.search).get('category');
+if (requestedFilter) applyGalleryFilter(requestedFilter);
 
 const galleryImages = document.querySelectorAll('.gallery-image img');
 if (galleryImages.length) {
@@ -54,6 +60,7 @@ if (galleryImages.length) {
     lastTrigger?.focus();
   };
   galleryImages.forEach((image) => {
+    if (image.closest('.gallery-image-link')) return;
     image.setAttribute('tabindex', '0');
     image.setAttribute('role', 'button');
     image.setAttribute('aria-label', `Shiko fotografinë: ${image.alt}`);
