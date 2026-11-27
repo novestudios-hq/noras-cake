@@ -27,6 +27,7 @@
 - [x] Labelled current gallery items as still photos so social screenshots are not presented as playable videos.
 - [x] Added the supplied customer testimonial below the homepage video using the exact review wording, reviewer name, 5/5 rating, and category scores.
 - [x] Integrated Nora’s Cake’s uploaded logo into the shared header, footer, favicon, and project logo metadata.
+- [x] Added the supplied children’s birthday cake to the Home and Gallery collections and featured it in the birthday service card under the Festa category.
 
 ## Waiting for client confirmation
 
