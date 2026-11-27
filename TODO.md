@@ -37,6 +37,7 @@
 - [x] Added URL-driven Gallery filter activation so category links open the relevant filtered view.
 - [x] Replaced temporary social-preview metadata with the live client hero asset and added route-specific canonical/`og:url` metadata.
 - [x] Replaced the homepage video poster with a real client cheesecake photo.
+- [x] Added the newly supplied pink-and-white birthday cake with bow, flowers, and gold details to the birthday Gallery and homepage collection for hero comparison.
 
 ## Waiting for client confirmation
 
