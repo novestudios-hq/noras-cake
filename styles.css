@@ -113,6 +113,7 @@ h2 { font-size: clamp(50px, 5.5vw, 78px); color: var(--burgundy-dark); line-heig
 .gallery-card-full .gallery-image { background: var(--pink); }
 .gallery-card-full .gallery-image img { object-fit: contain; object-position: center; padding: 10px; }
 .gallery-card:hover .gallery-image img { transform: scale(1.045); }
+.gallery-image img[tabindex]:focus-visible { outline: 3px solid var(--burgundy); outline-offset: 4px; }
 .image-number { position: absolute; z-index: 1; top: 13px; left: 14px; color: #fff; font-family: var(--serif); font-size: 16px; font-style: italic; }
 .gallery-caption { display: flex; align-items: start; justify-content: space-between; padding: 14px 1px 0; }
 .gallery-caption h3 { margin: 0; color: var(--burgundy-dark); font-family: var(--serif); font-weight: 500; font-size: 22px; line-height: 1; }

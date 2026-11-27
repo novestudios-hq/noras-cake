@@ -21,6 +21,7 @@
 - [x] Added route-specific SEO titles, descriptions, keywords, Open Graph/Twitter metadata, and Bakery structured data.
 - [x] Made the “Me gjithë zemër” heart-cake card show the complete source image instead of cropping it.
 - [x] Audited Ferizaj local SEO structure: strengthened location-led titles and descriptions, added Albanian/Kosovo social locale metadata, and enriched Bakery schema with Ferizaj service area, language, description, and image.
+- [x] Completed a static and live accessibility pass: verified image alt text, labelled form fields, local links, keyboard gallery opening, visible focus styling, and lightbox focus restoration.
 
 ## Waiting for client confirmation
 

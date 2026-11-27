@@ -36,21 +36,29 @@ if (galleryImages.length) {
   lightbox.setAttribute('role', 'dialog');
   lightbox.setAttribute('aria-modal', 'true');
   lightbox.setAttribute('aria-label', 'Shiko fotografinë');
+  lightbox.setAttribute('aria-hidden', 'true');
   lightbox.innerHTML = '<button class="lightbox-close" type="button" aria-label="Mbyll fotografinë">×</button><img class="lightbox-image" alt="" />';
   document.body.appendChild(lightbox);
   const lightboxImage = lightbox.querySelector('.lightbox-image');
+  let lastTrigger = null;
   const closeLightbox = () => {
     lightbox.classList.remove('is-open');
     document.body.classList.remove('lightbox-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    lastTrigger?.focus();
   };
   galleryImages.forEach((image) => {
     image.setAttribute('tabindex', '0');
     image.setAttribute('role', 'button');
+    image.setAttribute('aria-label', `Shiko fotografinë: ${image.alt}`);
+    image.setAttribute('aria-haspopup', 'dialog');
     const openLightbox = () => {
+      lastTrigger = image;
       lightboxImage.src = image.currentSrc || image.src;
       lightboxImage.alt = image.alt;
       lightbox.classList.add('is-open');
       document.body.classList.add('lightbox-open');
+      lightbox.setAttribute('aria-hidden', 'false');
       lightbox.querySelector('.lightbox-close').focus();
     };
     image.addEventListener('click', openLightbox);
