@@ -6,15 +6,15 @@ Build a polished, responsive five-page website for Nora’s Cake in Ferizaj. The
 
 ## Design direction
 
-**Chosen style: warm editorial patisserie.** It is the strongest fit for the supplied poster: romantic, handcrafted, and premium without becoming overly formal or childish.
+**Chosen style: soft handmade bakery editorial.** It keeps the premium patisserie foundation but adds a warmer, more tactile bakery feeling through gentle surfaces, rounded photo framing, and quieter romantic details.
 
 - **Design movement:** modern patisserie editorial with soft bridal stationery cues.
-- **Core principles:** generous negative space, cake-first photography, delicate typographic contrast, clear conversion paths.
-- **Color philosophy:** blush and cream make the experience feel warm and celebratory; burgundy gives Nora’s Cake an ownable premium anchor; muted gold is reserved for small details so the page does not become overly decorative.
+- **Core principles:** generous negative space, cake-first photography, gentle tactile framing, delicate typographic contrast, clear conversion paths.
+- **Color philosophy:** warm paper, blush, and cream should feel like bakery wrapping and soft icing; burgundy gives Nora’s Cake an ownable premium anchor; muted gold is reserved for small details so the page stays tender rather than ornate.
 - **Layout paradigm:** an asymmetrical editorial flow with offset image cards, a moving service ticker, and full-width color bands rather than a centered template grid.
-- **Signature elements:** Parisienne-style script wordmark, thin burgundy rules, small circular seal motif, and hand-lettered-style italic emphasis.
+- **Signature elements:** Parisienne-style script wordmark, softly rounded photo frames with one slightly irregular corner, thin burgundy rules, small circular seal motif, and hand-lettered-style italic emphasis.
 - **Interaction philosophy:** every interaction should reduce ordering friction; filter the gallery, jump to the right section, or open WhatsApp/phone directly.
-- **Animation:** restrained entrance motion, slow image hover zoom, and a continuous service ticker. No distracting loops or autoplay media.
+- **Animation:** restrained entrance motion, slow image hover zoom, and a continuous service ticker. Gallery images open as still photographs; real videos should only be added when Nora’s original video files are available, never inferred from social-media screenshots.
 - **Typography system:** Parisienne for the wordmark, Cormorant Garamond for expressive headings and product labels, DM Sans for navigation, form-like text, and CTAs.
 - **Brand essence:** custom cakes and sweets for Ferizaj celebrations, made with care and designed around the person and occasion. Personality: elegant, warm, attentive.
 - **Brand voice:** intimate, simple, and specific. Example lines: “Momente të ëmbla, të bëra vetëm për ju.” and “Na tregoni për ditën; ne kujdesemi për detajet.”
@@ -23,7 +23,7 @@ Build a polished, responsive five-page website for Nora’s Cake in Ferizaj. The
 
 ## Implementation approach
 
-Use a lightweight static web stack so the site remains easy to export to GitHub Pages or adapt into a framework later. `index.html` owns the home page; `services/index.html`, `weddings/index.html`, `gallery/index.html`, and `contact/index.html` own the four supporting pages. `styles.css` owns the shared design system and page layouts, while `app.js` owns mobile navigation, gallery filtering, and the demo form response. Local assets live in `assets/` and are referenced with root-relative paths.
+Use a lightweight static web stack so the site remains easy to export to GitHub Pages or adapt into a framework later. `index.html` owns the home page; `services/index.html`, `weddings/index.html`, `gallery/index.html`, and `contact/index.html` own the four supporting pages. `styles.css` owns the shared design system and page layouts, while `app.js` owns mobile navigation, gallery filtering, and the demo form response. Local assets live in `assets/` and use project-relative paths so both the Manus preview and GitHub Pages project URL resolve them correctly.
 
 The current content is in Albanian with direct actions for WhatsApp, phone, Instagram, and location. Social images are treated as demo previews and should be replaced by owner-approved source files before public launch.
 
