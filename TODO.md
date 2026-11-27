@@ -5,7 +5,7 @@
 - [x] Five responsive pages: Home, Services, Weddings & Engagements, Gallery, and Contact / Order.
 - [x] Premium blush, burgundy, ivory, and gold visual system with editorial patisserie direction.
 - [x] Shared navigation, footer, responsive mobile menu, gallery filtering, and direct contact actions.
-- [x] Correct Instagram handle and URL: `@noras.cake1`.
+- [x] Correct Instagram handle and URL: `@noras_cake1`.
 - [x] User-selected cheesecake preparation image used in the hero.
 - [x] Supplied service poster used only as reference; it is not displayed as an image.
 
