@@ -20,6 +20,7 @@
 - [x] Corrected the Home gallery’s cheesecake category to Specialitete.
 - [x] Added route-specific SEO titles, descriptions, keywords, Open Graph/Twitter metadata, and Bakery structured data.
 - [x] Made the “Me gjithë zemër” heart-cake card show the complete source image instead of cropping it.
+- [x] Audited Ferizaj local SEO structure: strengthened location-led titles and descriptions, added Albanian/Kosovo social locale metadata, and enriched Bakery schema with Ferizaj service area, language, description, and image.
 
 ## Waiting for client confirmation
 
@@ -34,6 +35,7 @@
 ## Before public launch
 
 - [ ] Add final domain, favicon, social preview image, sitemap, and robots file once the production origin is chosen.
+- [ ] Add canonical URLs, `og:url`, and absolute sitemap/robots references only after the final production domain is confirmed.
 - [ ] Optimize approved photography into appropriate responsive formats.
 - [ ] Run final mobile accessibility, keyboard, contrast, and link checks.
 - [ ] Record client approval before replacing demo labels and publishing.
