@@ -1,29 +1,37 @@
 # Nora’s Cake — TODO
 
-## Five-page website build
+## Completed demo foundation
 
-- [x] Create a premium responsive Home page with the blush-pink, burgundy, ivory, and gold visual system.
-- [x] Create a Services page covering wedding and engagement cakes, birthday and celebration cakes, cheesecake, and sweets.
-- [x] Create a dedicated Weddings & Engagements page with a high-intent storytelling layout and reservation CTA.
-- [x] Create a filterable Gallery page with occasion labels and social-preview imagery.
-- [x] Create a Contact / Order page with phone, Instagram, location, WhatsApp CTA, and enquiry form presentation.
-- [x] Add responsive mobile navigation and shared footer/header structure across all five pages.
-- [x] Add synchronized five-page route manifests.
-- [x] Add a local demo response for the order enquiry form.
-- [x] Replace the supplied menu poster as a visible image with extracted service copy; the poster is reference-only.
-- [x] Use the user-selected cheesecake preparation photo as the main hero visual.
+- [x] Five responsive pages: Home, Services, Weddings & Engagements, Gallery, and Contact / Order.
+- [x] Premium blush, burgundy, ivory, and gold visual system with editorial patisserie direction.
+- [x] Shared navigation, footer, responsive mobile menu, gallery filtering, and direct contact actions.
+- [x] Correct Instagram handle and URL: `@noras.cake1`.
+- [x] User-selected cheesecake preparation image used in the hero.
+- [x] Supplied service poster used only as reference; it is not displayed as an image.
+
+## Completed improvement pass
+
+- [x] Contact form now prepares a structured WhatsApp enquiry containing name, phone, occasion, date, and idea.
+- [x] Contact copy clearly explains the demo WhatsApp workflow instead of pretending an enquiry was sent.
+- [x] Added persistent WhatsApp action for faster mobile conversion.
+- [x] Added a clearly labelled demo menu guide using only confirmed service categories: weddings, engagements, celebrations, cheesecake, sweets, baklava, and custom orders.
+- [x] Added practical FAQ guidance for lead time, inspiration images, pricing logic, and pickup / delivery confirmation.
+- [x] Added wedding booking guidance and a direct date-check WhatsApp CTA.
+- [x] Corrected the Home gallery’s cheesecake category to Specialitete.
+
+## Waiting for client confirmation
+
+- [x] Review the supplied social menu image and extract its visible guidance without displaying the poster on the website.
+- [x] Add the visible menu guidance to the Services page: Red velvet, Boronicë, Rafaello, Malaga, Snikers, Cheesecake me fruta, Tortë trendafil, Arrë kokosi, Bakllavë, Ekler, and Trileqe.
+- [ ] Confirm the menu’s final spelling, ingredients, portions, availability, and prices with Nora before treating it as final.
+- [ ] Replace temporary social-preview images with Nora’s Cake’s approved original photos.
+- [ ] Confirm final phone number, address, order lead time, pickup / delivery policy, and payment or deposit terms.
+- [ ] Have a native Albanian speaker proofread the final copy.
+- [ ] Decide whether the WhatsApp-first form is the final workflow or whether email backup is also required.
 
 ## Before public launch
 
-- [ ] Replace temporary social-preview images with owner-approved original photos and confirm image usage permission.
-- [ ] Confirm final phone number, Instagram handle, address, menu categories, flavours, and minimum lead time.
-- [ ] Connect the enquiry form to the client’s preferred email or WhatsApp workflow.
-- [ ] Add the final domain, hosting, analytics, and SEO verification details.
-- [ ] Add final favicon/brand mark if the client supplies a logo asset.
-
-## Optional next phase
-
-- [ ] Add a menu page with confirmed flavours, portion sizes, prices, and seasonal availability.
-- [ ] Add a lightbox for the Gallery page.
-- [ ] Add Albanian / English language switching if diaspora customers are a priority.
-- [ ] Add a simple content-update workflow for new cake photos and seasonal offers.
+- [ ] Add final domain, favicon, social preview image, sitemap, robots file, and local-business metadata.
+- [ ] Optimize approved photography into appropriate responsive formats.
+- [ ] Run final mobile accessibility, keyboard, contrast, and link checks.
+- [ ] Record client approval before replacing demo labels and publishing.

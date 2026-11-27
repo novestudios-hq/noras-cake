@@ -119,6 +119,13 @@ h2 { font-size: clamp(50px, 5.5vw, 78px); color: var(--burgundy-dark); line-heig
 .gallery-card.is-hidden { display: none; }
 .gallery-footnote { display: flex; align-items: center; gap: 13px; color: var(--muted); font-size: 10px; margin-top: 35px; font-style: italic; }
 .gallery-footnote .mini-seal { width: 26px; height: 26px; font-size: 11px; }
+.gallery-image img[tabindex] { cursor: zoom-in; }
+.lightbox { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; padding: 44px; background: rgba(57, 28, 39, .9); opacity: 0; pointer-events: none; transition: opacity .25s ease; }
+.lightbox.is-open { opacity: 1; pointer-events: auto; }
+.lightbox-image { max-width: min(900px, 92vw); max-height: 84vh; object-fit: contain; box-shadow: 0 18px 60px rgba(0,0,0,.28); }
+.lightbox-close { position: absolute; top: 20px; right: 25px; color: var(--cream); border: 1px solid rgba(255,255,255,.5); background: transparent; width: 38px; height: 38px; font-size: 26px; line-height: 1; cursor: pointer; }
+.lightbox-close:hover { background: var(--cream); color: var(--burgundy); }
+body.lightbox-open { overflow: hidden; }
 
 .feature { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; background: var(--pink); margin-bottom: 145px; min-height: 570px; }
 .feature-image { height: 570px; position: relative; overflow: hidden; }
@@ -218,6 +225,10 @@ blockquote { text-align: center; font-family: var(--serif); font-weight: 400; fo
 .principle-number { color: var(--burgundy); font-family: var(--serif); font-size: 22px; font-style: italic; }
 .wedding-principles h3 { color: var(--burgundy-dark); font-family: var(--serif); font-weight: 500; font-size: 25px; margin: 21px 0 10px; }
 .wedding-principles p { color: var(--muted); font-size: 12px; line-height: 1.8; max-width: 275px; }
+.booking-note { background: var(--pink); display: grid; grid-template-columns: .85fr 1fr auto; gap: 40px; align-items: end; padding: 52px clamp(24px, 6vw, 76px); margin-bottom: 110px; }
+.booking-note h2 { margin-top: 18px; font-size: clamp(42px, 4.5vw, 64px); }
+.booking-note > p { color: var(--muted); font-size: 12px; line-height: 1.8; max-width: 350px; margin: 0; }
+.booking-note .button { white-space: nowrap; }
 
 .gallery-hero { min-height: 520px; }
 .gallery-hero-stack { position: relative; height: 400px; }
@@ -260,6 +271,28 @@ blockquote { text-align: center; font-family: var(--serif); font-weight: 400; fo
 .contact-strip > div { display: flex; align-items: center; gap: 18px; }
 .contact-strip h3 { color: var(--burgundy-dark); font-family: var(--serif); font-size: 25px; font-weight: 500; margin: 0; }
 .contact-strip p { color: var(--muted); font-size: 11px; margin: 5px 0 0; }
+.menu-guide { background: var(--cream); border: 1px solid var(--line); padding: 52px clamp(24px, 6vw, 82px); margin-bottom: 135px; }
+.menu-guide-head { display: flex; justify-content: space-between; gap: 40px; align-items: end; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+.menu-guide-head h2 { margin-top: 18px; font-size: clamp(42px, 4.5vw, 64px); }
+.menu-guide-head p { color: var(--muted); max-width: 330px; font-size: 12px; line-height: 1.8; margin: 0; }
+.menu-guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 34px; }
+.menu-guide-item { padding: 24px 0 20px; border-bottom: 1px solid var(--line); }
+.menu-guide-item span { color: var(--gold); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; }
+.menu-guide-item h3 { color: var(--burgundy-dark); font-family: var(--serif); font-size: 24px; font-weight: 500; margin: 8px 0 5px; }
+.menu-guide-item p { color: var(--muted); font-size: 11px; line-height: 1.65; margin: 0; }
+.menu-guide-note { color: var(--muted); font-size: 10px; line-height: 1.6; font-style: italic; margin: 28px 0 0; }
+.faq-section { padding: 0 0 125px; }
+.faq-grid { border-top: 1px solid var(--line); }
+.faq-grid details { border-bottom: 1px solid var(--line); }
+.faq-grid summary { cursor: pointer; list-style: none; color: var(--burgundy-dark); font-family: var(--serif); font-size: 24px; padding: 20px 0; display: flex; justify-content: space-between; gap: 20px; }
+.faq-grid summary::-webkit-details-marker { display: none; }
+.faq-grid summary::after { content: '+'; color: var(--burgundy); font-family: var(--sans); font-size: 20px; }
+.faq-grid details[open] summary::after { content: '−'; }
+.faq-grid details p { max-width: 680px; color: var(--muted); font-size: 12px; line-height: 1.8; padding: 0 44px 21px 0; margin: 0; }
+.floating-whatsapp { position: fixed; right: 24px; bottom: 24px; z-index: 20; display: inline-flex; align-items: center; gap: 9px; padding: 11px 15px; color: var(--cream); background: var(--burgundy); box-shadow: 0 10px 24px rgba(57, 28, 39, .18); font-size: 10px; letter-spacing: .03em; }
+.floating-whatsapp:hover { background: var(--burgundy-dark); transform: translateY(-2px); }
+.floating-whatsapp-dot { width: 20px; height: 20px; border: 1px solid rgba(255,255,255,.6); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px; }
+.floating-whatsapp b { font-size: 14px; font-weight: 400; }
 
 @media (max-width: 900px) {
   .section-shell, .site-header { width: min(100% - 42px, 680px); }
@@ -289,6 +322,7 @@ blockquote { text-align: center; font-family: var(--serif); font-weight: 400; fo
   .service-card:last-child { grid-column: span 2; max-width: calc(50% - 9px); }
   .service-note { grid-template-columns: 45px 1fr; }
   .service-note > p { grid-column: 2; }
+  .menu-guide-grid { grid-template-columns: 1fr 1fr; }
   .wedding-hero-image { height: 485px; }
   .wedding-story-image { height: 430px; }
   .wedding-story-copy { max-width: 560px; }
@@ -327,6 +361,7 @@ blockquote { text-align: center; font-family: var(--serif); font-weight: 400; fo
   .gallery-caption h3 { font-size: 18px; }
   .gallery-caption p { font-size: 8px; }
   .gallery-footnote { align-items: flex-start; }
+  .lightbox { padding: 30px 18px; }
   .feature { margin-left: -21px; margin-right: -21px; }
   .feature-image { height: 360px; }
   .feature-copy { padding: 50px 21px 60px; }
@@ -349,6 +384,14 @@ blockquote { text-align: center; font-family: var(--serif); font-weight: 400; fo
   .service-note { margin-bottom: 88px; padding: 38px 25px; grid-template-columns: 40px 1fr; gap: 17px; }
   .service-note h2 { font-size: 45px; }
   .service-note > p { grid-column: 2; font-size: 12px; }
+  .menu-guide { padding: 38px 25px; margin-bottom: 88px; }
+  .menu-guide-head { display: block; }
+  .menu-guide-head p { margin-top: 21px; }
+  .menu-guide-grid { grid-template-columns: 1fr; }
+  .faq-section { padding-bottom: 88px; }
+  .faq-grid summary { font-size: 21px; }
+  .floating-whatsapp { right: 14px; bottom: 14px; padding: 10px 12px; }
+  .floating-whatsapp span:nth-child(2) { display: none; }
   .page-cta { align-items: flex-start; flex-direction: column; padding-bottom: 88px; gap: 28px; }
   .wedding-hero-image { height: 390px; padding-right: 12px; }
   .wedding-hero-image::after { inset: 25px; }
@@ -358,6 +401,8 @@ blockquote { text-align: center; font-family: var(--serif); font-weight: 400; fo
   .wedding-principles { padding-bottom: 88px; }
   .wedding-principles-grid { grid-template-columns: 1fr; gap: 25px; }
   .wedding-principles h3 { margin-top: 13px; }
+  .booking-note { grid-template-columns: 1fr; gap: 23px; margin-bottom: 78px; }
+  .booking-note > p { max-width: 500px; }
   .gallery-hero { min-height: auto; }
   .gallery-hero-stack { height: 330px; }
   .gallery-hero-stack img { height: 260px; width: 62%; }
