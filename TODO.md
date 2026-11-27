@@ -26,6 +26,7 @@
 - [x] Softened the visual system with bakery-paper tones, gentler blush surfaces, rounded handcrafted photo framing, and quieter gallery card shadows.
 - [x] Labelled current gallery items as still photos so social screenshots are not presented as playable videos.
 - [x] Added the supplied customer testimonial below the homepage video using the exact review wording, reviewer name, 5/5 rating, and category scores.
+- [x] Integrated Nora’s Cake’s uploaded logo into the shared header, footer, favicon, and project logo metadata.
 
 ## Waiting for client confirmation
 
