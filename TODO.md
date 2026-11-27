@@ -25,6 +25,7 @@
 - [x] Improved the temporary demo presentation with a clean derived cheesecake crop, stronger keyboard focus styling, reduced-motion support, and accessible gallery filter state.
 - [x] Softened the visual system with bakery-paper tones, gentler blush surfaces, rounded handcrafted photo framing, and quieter gallery card shadows.
 - [x] Labelled current gallery items as still photos so social screenshots are not presented as playable videos.
+- [x] Added the supplied customer testimonial below the homepage video using the exact review wording, reviewer name, 5/5 rating, and category scores.
 
 ## Waiting for client confirmation
 
@@ -36,6 +37,7 @@
 - [ ] Confirm final phone number, address, order lead time, pickup / delivery policy, and payment or deposit terms.
 - [ ] Have a native Albanian speaker proofread the final copy.
 - [ ] Decide whether the WhatsApp-first form is the final workflow or whether email backup is also required.
+- [ ] Add additional customer testimonials only when exact wording and website-use approval are provided.
 
 ## Before public launch
 
