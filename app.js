@@ -19,9 +19,15 @@ const filterButtons = document.querySelectorAll('.filter-button');
 const galleryCards = document.querySelectorAll('.gallery-card');
 
 filterButtons.forEach((button) => {
+  button.setAttribute('role', 'tab');
+  button.setAttribute('aria-selected', String(button.classList.contains('is-active')));
+});
+
+filterButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const filter = button.dataset.filter;
     filterButtons.forEach((item) => item.classList.toggle('is-active', item === button));
+    filterButtons.forEach((item) => item.setAttribute('aria-selected', String(item === button)));
     galleryCards.forEach((card) => {
       const shouldShow = filter === 'all' || card.dataset.category === filter;
       card.classList.toggle('is-hidden', !shouldShow);

@@ -22,6 +22,7 @@
 - [x] Made the “Me gjithë zemër” heart-cake card show the complete source image instead of cropping it.
 - [x] Audited Ferizaj local SEO structure: strengthened location-led titles and descriptions, added Albanian/Kosovo social locale metadata, and enriched Bakery schema with Ferizaj service area, language, description, and image.
 - [x] Completed a static and live accessibility pass: verified image alt text, labelled form fields, local links, keyboard gallery opening, visible focus styling, and lightbox focus restoration.
+- [x] Improved the temporary demo presentation with a clean derived cheesecake crop, stronger keyboard focus styling, reduced-motion support, and accessible gallery filter state.
 
 ## Waiting for client confirmation
 
@@ -29,6 +30,7 @@
 - [x] Add the visible menu guidance to the Services page: Red velvet, Boronicë, Rafaello, Malaga, Snikers, Cheesecake me fruta, Tortë trendafil, Arrë kokosi, Bakllavë, Ekler, and Trileqe.
 - [ ] Confirm the menu’s final spelling, ingredients, portions, availability, and prices with Nora before treating it as final.
 - [ ] Replace temporary social-preview images with Nora’s Cake’s approved original photos.
+- [ ] Replace the remaining temporary cake images with originals; baked-in play buttons cannot be safely removed from the current files without the source photos.
 - [ ] Confirm final phone number, address, order lead time, pickup / delivery policy, and payment or deposit terms.
 - [ ] Have a native Albanian speaker proofread the final copy.
 - [ ] Decide whether the WhatsApp-first form is the final workflow or whether email backup is also required.
