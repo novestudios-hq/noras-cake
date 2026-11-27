@@ -90,13 +90,17 @@ const formStatus = document.querySelector('#form-status');
 orderForm?.addEventListener('submit', (event) => {
   event.preventDefault();
   const data = new FormData(orderForm);
+  const occasion = String(data.get('occasion') || '');
+  const isRestaurant = occasion.toLowerCase().includes('restorant');
   const message = [
-    'Përshëndetje Nora’s Cake, dua të bëj një kërkesë.',
+    isRestaurant
+      ? 'Përshëndetje Nora’s Cake, dua të bëj një kërkesë për cheesecake për restorant.'
+      : 'Përshëndetje Nora’s Cake, dua të bëj një kërkesë për porosi private.',
     `Emri: ${data.get('name')}`,
     `Telefoni: ${data.get('phone')}`,
-    `Rasti: ${data.get('occasion')}`,
-    `Data: ${data.get('date') || 'Ende e papërcaktuar'}`,
-    `Ideja: ${data.get('message') || 'Nuk është specifikuar'}`,
+    isRestaurant ? `Restoranti / rasti: ${occasion}` : `Rasti: ${occasion}`,
+    `Data ose ritmi i furnizimit: ${data.get('date') || 'Ende e papërcaktuar'}`,
+    isRestaurant ? `Sasia dhe kërkesa: ${data.get('message') || 'Nuk është specifikuar'}` : `Ideja, shija dhe numri i personave: ${data.get('message') || 'Nuk është specifikuar'}`,
   ].join('\n');
   const whatsappUrl = `https://wa.me/38345632148?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
@@ -104,6 +108,21 @@ orderForm?.addEventListener('submit', (event) => {
     formStatus.textContent = 'Kërkesa u përgatit për WhatsApp. Kontrolloni dritaren e re dhe dërgojeni mesazhin te Nora’s Cake.';
     formStatus.classList.add('is-success');
   }
+});
+
+const templateButtons = document.querySelectorAll('.template-copy');
+const templateStatus = document.querySelector('#template-status');
+templateButtons.forEach((button) => {
+  button.addEventListener('click', async () => {
+    const template = button.closest('.template-card')?.querySelector('pre')?.textContent?.trim();
+    if (!template) return;
+    try {
+      await navigator.clipboard.writeText(template);
+      if (templateStatus) templateStatus.textContent = 'Mesazhi u kopjua. Tani mund ta ngjisni në WhatsApp.';
+    } catch (error) {
+      if (templateStatus) templateStatus.textContent = 'Kopjimi automatik nuk u lejua nga shfletuesi. Përzgjidhni tekstin e mesazhit dhe kopjojeni manualisht.';
+    }
+  });
 });
 
 if (!document.querySelector('.floating-whatsapp')) {

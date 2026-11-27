@@ -6,7 +6,7 @@
 - [x] Premium blush, burgundy, ivory, and gold visual system with editorial patisserie direction.
 - [x] Shared navigation, footer, responsive mobile menu, gallery filtering, and direct contact actions.
 - [x] Correct Instagram handle and URL: `@noras_cake1`.
-- [x] User-selected cheesecake preparation image used in the hero.
+- [x] Client-selected white wedding/engagement cake with gold rings and floral cascade used as the homepage hero.
 - [x] Supplied service poster used only as reference; it is not displayed as an image.
 
 ## Completed improvement pass
@@ -14,7 +14,7 @@
 - [x] Contact form now prepares a structured WhatsApp enquiry containing name, phone, occasion, date, and idea.
 - [x] Contact copy clearly explains the demo WhatsApp workflow instead of pretending an enquiry was sent.
 - [x] Added persistent WhatsApp action for faster mobile conversion.
-- [x] Added a clearly labelled demo menu guide using only confirmed service categories: weddings, engagements, celebrations, cheesecake, sweets, baklava, and custom orders.
+- [x] Added a clearly labelled demo menu guide using provisional guidance for weddings, engagements, birthdays, cheesecake, sweets, baklava, and custom orders.
 - [x] Added practical FAQ guidance for lead time, inspiration images, pricing logic, and pickup / delivery confirmation.
 - [x] Added wedding booking guidance and a direct date-check WhatsApp CTA.
 - [x] Corrected the Home gallery’s cheesecake category to Specialitete.
@@ -28,14 +28,19 @@
 - [x] Added the supplied customer testimonial below the homepage video using the exact review wording, reviewer name, 5/5 rating, and category scores.
 - [x] Integrated Nora’s Cake’s uploaded logo into the shared header, footer, favicon, and project logo metadata.
 - [x] Added the supplied children’s birthday cake to the Home and Gallery collections and featured it in the birthday service card under the Festa category.
+- [x] Imported all 32 client-provided Drive photos into `assets/client/` with descriptive filenames and preserved source pixels.
+- [x] Reorganized the Home, Services, Weddings, and Gallery pages around weddings/engagements, birthdays, baklava/sweets, restaurant cheesecake, and custom cakes.
+- [x] Added filterable Gallery categories for `wedding`, `birthday`, `sweets`, `restaurant`, and `custom`.
+- [x] Added a dedicated `Për restorante` service card and restaurant-specific inquiry wording, separate from private celebration orders.
+- [x] Added visible Albanian WhatsApp templates for private customers and restaurants, with copy-to-clipboard buttons.
 
 ## Waiting for client confirmation
 
 - [x] Review the supplied social menu image and extract its visible guidance without displaying the poster on the website.
 - [x] Add the visible menu guidance to the Services page: Red velvet, Boronicë, Rafaello, Malaga, Snikers, Cheesecake me fruta, Tortë trendafil, Arrë kokosi, Bakllavë, Ekler, and Trileqe.
 - [ ] Confirm the menu’s final spelling, ingredients, portions, availability, and prices with Nora before treating it as final.
-- [ ] Replace temporary social-preview images with Nora’s Cake’s approved original photos, preserving the gallery’s photo-first presentation.
-- [ ] Replace the remaining temporary cake images with originals; baked-in play buttons cannot be safely removed from the current files without the source photos.
+- [x] Replace the previous social-preview gallery collection with the client-provided Drive photos, preserving the gallery’s photo-first presentation.
+- [ ] Confirm Nora’s final birthday-photo selection before the demo is treated as final; the broad client set is currently grouped for review.
 - [ ] Confirm final phone number, address, order lead time, pickup / delivery policy, and payment or deposit terms.
 - [ ] Have a native Albanian speaker proofread the final copy.
 - [ ] Decide whether the WhatsApp-first form is the final workflow or whether email backup is also required.

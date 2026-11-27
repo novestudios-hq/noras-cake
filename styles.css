@@ -454,3 +454,36 @@ blockquote { text-align: center; font-family: var(--serif); font-weight: 400; fo
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .contact-strip { align-items: flex-start; flex-direction: column; gap: 24px; margin-bottom: 78px; }
 }
+
+/* Client-category and inquiry additions */
+.service-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.service-card img { border-radius: 14px 14px 3px 14px; }
+.service-card:nth-child(4) img { object-position: 50% 50%; }
+.whatsapp-templates { padding: 0 0 115px; }
+.templates-heading { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin: 21px 0 35px; }
+.templates-heading h2 { margin: 0; }
+.templates-heading p { color: var(--muted); max-width: 350px; font-size: 12px; line-height: 1.8; margin: 0; }
+.template-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.template-card { padding: 31px clamp(23px, 4vw, 42px) 34px; background: var(--cream); border: 1px solid var(--line); border-radius: 18px 18px 5px 18px; box-shadow: 0 14px 32px rgba(91, 46, 52, .045); }
+.template-label { display: block; color: var(--gold); text-transform: uppercase; letter-spacing: .16em; font-size: 9px; font-weight: 700; margin-bottom: 11px; }
+.template-card h3 { color: var(--burgundy-dark); font-family: var(--serif); font-size: 29px; font-weight: 500; margin: 0 0 17px; }
+.template-card pre { min-height: 190px; margin: 0 0 23px; padding: 18px; white-space: pre-wrap; color: var(--muted); background: var(--paper); border-left: 2px solid var(--pink-deep); font: 12px/1.75 var(--sans); }
+.template-copy { cursor: pointer; }
+.template-status { min-height: 18px; }
+
+@media (max-width: 900px) {
+  .service-cards { grid-template-columns: 1fr 1fr; }
+  .service-card:last-child { grid-column: span 2; max-width: calc(50% - 9px); }
+  .template-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .service-cards { grid-template-columns: 1fr; }
+  .service-card:last-child { grid-column: auto; max-width: none; }
+  .templates-heading { display: block; }
+  .templates-heading p { margin-top: 22px; }
+  .whatsapp-templates { padding-bottom: 80px; }
+  .template-card { padding: 26px 20px 28px; }
+  .template-card h3 { font-size: 25px; }
+  .template-card pre { font-size: 11px; }
+}
